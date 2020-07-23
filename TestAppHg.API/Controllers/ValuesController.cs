@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TestAppHg.API.Data;
 using TestAppHg.API.Dtos;
@@ -6,6 +7,7 @@ using TestAppHg.API.Models;
 
 namespace TestAppHg.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
