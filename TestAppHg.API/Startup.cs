@@ -31,6 +31,8 @@ namespace TestAppHg.API
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
+
+            services.AddScoped<IMainRepository, MainRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
