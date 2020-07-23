@@ -33,6 +33,7 @@ namespace TestAppHg.API
             services.AddControllers();
 
             services.AddScoped<IMainRepository, MainRepository>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

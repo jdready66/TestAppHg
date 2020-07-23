@@ -6,6 +6,7 @@ namespace TestAppHg.API.Data
     public class DataContext : DbContext
     {
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
         public DataContext(DbContextOptions opts) : base(opts) {}
 
     }
